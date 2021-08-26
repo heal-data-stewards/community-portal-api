@@ -11,16 +11,18 @@ module.exports = ({ env }) => ({
     },
   },
   email: {
-    provider: "sendmail",
+    provider: env("EMAIL_PROVIDER"),
     providerOptions: {
-      dkim: {
-        privateKey: "../dkim-private.pem",
-        keySelector: "abcd", // the same as the one set in DNS txt record, use online dns lookup tools to be sure that is retreivable
+      host: env("EMAIL_SMTP_HOST", "smtp.healdatafair.com"),
+      port: env("EMAIL_SMTP_PORT", 587),
+      auth: {
+        user: env("EMAIL_SMTP_USER"),
+        pass: env("EMAIL_SMTP_PASS"),
       },
     },
     settings: {
-      defaultFrom: "srocha@renci.org",
-      defaultReplyTo: "srocha@renci.org",
+      defaultFrom: env("EMAIL_ADDRESS_FROM"),
+      defaultReplyTo: env("EMAIL_ADDRESS_REPLY"),
     },
   },
 });
