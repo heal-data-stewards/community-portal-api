@@ -13,7 +13,7 @@ module.exports = ({ env }) => ({
   email: {
     provider: env("EMAIL_PROVIDER"),
     providerOptions: {
-      host: env("EMAIL_SMTP_HOST", "smtp.healdatafair.com"),
+      host: env("EMAIL_SMTP_HOST", "smtp.example.com"),
       port: env("EMAIL_SMTP_PORT", 587),
       auth: {
         user: env("EMAIL_SMTP_USER"),
