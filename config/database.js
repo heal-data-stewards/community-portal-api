@@ -12,7 +12,7 @@ module.exports = ({ env }) => ({
         password: env("DATABASE_PASSWORD", "Tict@c997!"),
         ssl: env.bool("DATABASE_SSL", false),
       },
-      options: { autoMigration: false },
+      options: { autoMigration: true },
     },
   },
 });
