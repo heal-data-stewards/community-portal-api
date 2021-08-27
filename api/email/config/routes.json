@@ -2,8 +2,20 @@
   "routes": [
     {
       "method": "POST",
-      "path": "/emails",
-      "handler": "Email.send",
+      "path": "/account-accepted",
+      "handler": "Email.confirm",
+      "config": {}
+    },
+    {
+      "method": "POST",
+      "path": "/account-rejected",
+      "handler": "Email.reject",
+      "config": {}
+    },
+    {
+      "method": "POST",
+      "path": "/account-requested",
+      "handler": "Email.reject",
       "config": {}
     }
   ]
