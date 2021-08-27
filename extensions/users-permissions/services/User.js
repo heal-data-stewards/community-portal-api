@@ -8,123 +8,12 @@
 
 const crypto = require("crypto");
 const bcrypt = require("bcryptjs");
+const fetch = require("node-fetch");
 
 const { sanitizeEntity, getAbsoluteServerUrl } = require("strapi-utils");
 
 module.exports = {
-  /**
-   * Promise to count users
-   *
-   * @return {Promise}
-   */
-
-  count(params) {
-    return strapi.query("user", "users-permissions").count(params);
-  },
-
-  /**
-   * Promise to search count users
-   *
-   * @return {Promise}
-   */
-
-  countSearch(params) {
-    return strapi.query("user", "users-permissions").countSearch(params);
-  },
-
-  /**
-   * Promise to add a/an user.
-   * @return {Promise}
-   */
-  async add(values) {
-    if (values.password) {
-      values.password = await strapi.plugins[
-        "users-permissions"
-      ].services.user.hashPassword(values);
-    }
-
-    return strapi.query("user", "users-permissions").create(values);
-  },
-
-  /**
-   * Promise to edit a/an user.
-   * @return {Promise}
-   */
-  async edit(params, values) {
-    if (values.password) {
-      values.password = await strapi.plugins[
-        "users-permissions"
-      ].services.user.hashPassword(values);
-    }
-
-    return strapi.query("user", "users-permissions").update(params, values);
-  },
-
-  /**
-   * Promise to fetch a/an user.
-   * @return {Promise}
-   */
-  fetch(params, populate) {
-    return strapi.query("user", "users-permissions").findOne(params, populate);
-  },
-
-  /**
-   * Promise to fetch authenticated user.
-   * @return {Promise}
-   */
-  fetchAuthenticatedUser(id) {
-    return strapi.query("user", "users-permissions").findOne({ id }, ["role"]);
-  },
-
-  /**
-   * Promise to fetch all users.
-   * @return {Promise}
-   */
-  fetchAll(params, populate) {
-    return strapi.query("user", "users-permissions").find(params, populate);
-  },
-
-  hashPassword(user = {}) {
-    return new Promise((resolve, reject) => {
-      if (!user.password || this.isHashed(user.password)) {
-        resolve(null);
-      } else {
-        bcrypt.hash(`${user.password}`, 10, (err, hash) => {
-          if (err) {
-            return reject(err);
-          }
-          resolve(hash);
-        });
-      }
-    });
-  },
-
-  isHashed(password) {
-    if (typeof password !== "string" || !password) {
-      return false;
-    }
-
-    return password.split("$").length === 4;
-  },
-
-  /**
-   * Promise to remove a/an user.
-   * @return {Promise}
-   */
-  async remove(params) {
-    return strapi.query("user", "users-permissions").delete(params);
-  },
-
-  async removeAll(params) {
-    return strapi.query("user", "users-permissions").delete(params);
-  },
-
-  validatePassword(password, hash) {
-    return bcrypt.compare(password, hash);
-  },
-
   async sendConfirmationEmail(user) {
-    console.log("testing when sending user confirmation email");
     const userPermissionService =
       strapi.plugins["users-permissions"].services.userspermissions;
     const pluginStore = await strapi.store({
@@ -140,9 +29,8 @@ module.exports = {
     const userInfo = sanitizeEntity(user, {
       model: strapi.query("user", "users-permissions").model,
     });
-
+    console.log("testing when sending user confirmation email");
     const confirmationToken = crypto.randomBytes(20).toString("hex");
-
     await this.edit({ id: user.id }, { confirmationToken });
 
     settings.message = await userPermissionService.template(settings.message, {
@@ -166,6 +54,28 @@ module.exports = {
       subject: settings.object,
       text: settings.message,
       html: settings.message,
+    });
+    async function postData() {
+      const response = await fetch(
+        "https://api.healdatafair.org/account-requested",
+        {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          // mode: 'cors', // no-cors, *cors, same-origin
+          // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+          // credentials: "same-origin", // include, *same-origin, omit
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          // redirect: 'follow', // manual, *follow, error
+          // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+          body: JSON.stringify({ email: "mattwatt@gmail.com" }), // body data type must match "Content-Type" header
+        }
+      );
+      return response.json();
+    }
+    postData().then((data) => {
+      console.log(data); // JSON data parsed by `data.json()` call
     });
   },
 };

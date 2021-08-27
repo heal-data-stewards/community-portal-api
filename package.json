@@ -12,6 +12,7 @@
   "devDependencies": {},
   "dependencies": {
     "knex": "0.21.18",
+    "node-fetch": "^2.6.1",
     "pg": "^8.5.1",
     "strapi": "^3.6.6",
     "strapi-admin": "^3.6.6",

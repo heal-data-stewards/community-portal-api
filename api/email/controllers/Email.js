@@ -55,7 +55,7 @@ module.exports = {
       const emailOptions = {
         to: sendTo,
         subject: "Moderation request for HEAL Data FAIR",
-        html: `<h1>Hello, </h1><p>a new user has requested access to the HEAL Data FAIR. Please moderate. </p>`,
+        html: `<p>Hello, </p><p>a new user has requested access to the HEAL Data FAIR. Please moderate. </p>`,
       };
       await strapi.plugins["email"].services.email.send(emailOptions);
       strapi.log.debug(`Email sent to ${sendTo}`);

@@ -15,7 +15,7 @@
     {
       "method": "POST",
       "path": "/account-requested",
-      "handler": "Email.reject",
+      "handler": "Email.admin",
       "config": {}
     }
   ]
