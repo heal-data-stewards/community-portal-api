@@ -17,7 +17,7 @@ module.exports = {
       const emailOptions = {
         to: sendTo,
         subject: "Welcome to the HEAL Data FAIR ",
-        html: `<h1>Hello, </h1><p>Your request to access the HEAL Data FAIR has been approved. You can now log in at <a href="https://www.healdatafair.org/account" target="_blank">HEALdataFAIR.org/account. </p><p>Best, </p><p>The HEAL Stewards</p>`,
+        html: `<p>Hello, </p><p>Your request to access the HEAL Data FAIR has been approved. You can now log in at <a href="https://www.healdatafair.org/account" target="_blank">HEALdataFAIR.org/account.</a> </p><p>Best, </p><p>The HEAL Stewards</p>`,
       };
       await strapi.plugins["email"].services.email.send(emailOptions);
       strapi.log.debug(`Email sent to ${sendTo}`);
@@ -36,7 +36,7 @@ module.exports = {
       const emailOptions = {
         to: sendTo,
         subject: "Moderation notification for the HEAL Data FAIR website  ",
-        html: `<h1>Hello, </h1><p>We are not able to approve your request for access to the HEAL Data FAIR. Currently, log-in access is available to members of the HEAL Collective Board, Working Groups, and Tiger Teams. If you believe this decision was made in error - or would like to learn more about joining one of these groups - please email us at HEALStewards@renci.org. </p><p>Best, </p><p>The HEAL Stewards</p>`,
+        html: `<p>Hello, </p><p>We are not able to approve your request for access to the HEAL Data FAIR. Currently, log-in access is available to members of the HEAL Collective Board, Working Groups, and Tiger Teams. If you believe this decision was made in error - or would like to learn more about joining one of these groups - please email us at HEALStewards@renci.org. </p><p>Best, </p><p>The HEAL Stewards</p>`,
       };
       await strapi.plugins["email"].services.email.send(emailOptions);
       strapi.log.debug(`Email sent to ${sendTo}`);

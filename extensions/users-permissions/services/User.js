@@ -13,6 +13,41 @@ const fetch = require("node-fetch");
 const { sanitizeEntity, getAbsoluteServerUrl } = require("strapi-utils");
 
 module.exports = {
+  async edit(params, values) {
+    if (values.password) {
+      values.password = await strapi.plugins[
+        "users-permissions"
+      ].services.user.hashPassword(values);
+    }
+    if (values.confirmed) {
+      console.log(values.confirmed);
+      async function postData() {
+        const response = await fetch(
+          "https://api.healdatafair.org/account-accepted",
+          {
+            method: "POST", // *GET, POST, PUT, DELETE, etc.
+            // mode: 'cors', // no-cors, *cors, same-origin
+            // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            // credentials: "same-origin", // include, *same-origin, omit
+            headers: {
+              "Content-Type": "application/json",
+              // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            // redirect: 'follow', // manual, *follow, error
+            // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+            body: JSON.stringify({ email: "rochascript@gmail.com" }), // body data type must match "Content-Type" header
+          }
+        );
+        return response.json();
+      }
+      postData().then((data) => {
+        console.log(data); // JSON data parsed by `data.json()` call
+      });
+    }
+
+    return strapi.query("user", "users-permissions").update(params, values);
+  },
+
   async sendConfirmationEmail(user) {
     const userPermissionService =
       strapi.plugins["users-permissions"].services.userspermissions;
@@ -29,7 +64,6 @@ module.exports = {
     const userInfo = sanitizeEntity(user, {
       model: strapi.query("user", "users-permissions").model,
     });
-    console.log("testing when sending user confirmation email");
     const confirmationToken = crypto.randomBytes(20).toString("hex");
     await this.edit({ id: user.id }, { confirmationToken });
 
@@ -69,7 +103,7 @@ module.exports = {
           },
           // redirect: 'follow', // manual, *follow, error
           // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-          body: JSON.stringify({ email: "mattwatt@gmail.com" }), // body data type must match "Content-Type" header
+          body: JSON.stringify({ email: "rochascript@gmail.com" }), // body data type must match "Content-Type" header
         }
       );
       return response.json();
