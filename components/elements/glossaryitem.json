@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_glossaryitems",
+  "info": {
+    "name": "glossaryitem",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "lineitem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.title"
+    },
+    "glossary_term": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.glossary-term"
+    }
+  }
+}

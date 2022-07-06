@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_elements_members",
+  "info": {
+    "name": "member",
+    "icon": "air-freshener",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "workinggrouptype": {
+      "type": "string"
+    },
+    "workinggroup": {
+      "type": "enumeration",
+      "enum": [
+        "COLLECTIVE_BOARD",
+        "RENCI",
+        "RTI_INTERNATIONAL"
+      ]
+    }
+  }
+}

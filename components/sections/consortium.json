@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_consortiums",
+  "info": {
+    "name": "consortium",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "consortiumblocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.resourceblock"
+    }
+  }
+}

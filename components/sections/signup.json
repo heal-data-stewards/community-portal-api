@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_signups",
+  "info": {
+    "name": "sign-up",
+    "icon": "arrow-alt-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "loginnotice": {
+      "type": "text"
+    }
+  }
+}

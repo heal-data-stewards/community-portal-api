@@ -1,0 +1,123 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "organization": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "userrole": {
+      "type": "string"
+    },
+    "programarea": {
+      "type": "string"
+    },
+    "roleInProgramArea": {
+      "type": "string"
+    },
+    "workgroup": {
+      "type": "enumeration",
+      "enum": [
+        "RENCI",
+        "RTI_INTERNATIONAL",
+        "COLLECTIVE_BOARD"
+      ]
+    },
+    "bio": {
+      "type": "text"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "RoleInHeal": {
+      "type": "enumeration",
+      "enum": [
+        "Representative_of_a_Community_Organization",
+        "Community_Member",
+        "Working_on_a_HEAL_funded_program",
+        "Non_HEAL_Researcher",
+        "Collective_Board_Member",
+        "Co_PI_HEAL_Data_Stewardship_Group",
+        "External_Ethics_Expert",
+        "Clinician",
+        "Agency",
+        "Partner",
+        "Other"
+      ]
+    }
+  }
+}

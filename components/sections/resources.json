@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_resources",
+  "info": {
+    "name": "resources",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "blurb": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

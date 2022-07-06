@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_members",
+  "info": {
+    "name": "members",
+    "icon": "angle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.member"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_glossary_term_and_definitions",
+  "info": {
+    "name": "glossary_term_and_definition",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "gtd_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.gtd-item"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_qandas",
+  "info": {
+    "name": "qanda",
+    "icon": "equals"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "text"
+    }
+  }
+}

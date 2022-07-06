@@ -21,7 +21,11 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": true,
+      "pluginOptions": {}
+    },
+    "color": {
+      "type": "string"
     }
   }
 }

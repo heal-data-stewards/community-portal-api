@@ -78,6 +78,16 @@
           "localized": true
         }
       }
+    },
+    "glossary_td": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.glossary-term-and-definition"
     }
   }
 }
