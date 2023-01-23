@@ -12,7 +12,8 @@ module.exports = {
     const body = ctx.request.body;
     const sendTo = body.email;
     strapi.log.debug(`Trying to send an email to ${sendTo}`);
-
+    console.log(ctx)
+    console.log(ctx.body)
     try {
       const emailOptions = {
         to: sendTo,

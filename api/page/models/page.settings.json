@@ -70,7 +70,9 @@
         "sections.resource-cards",
         "sections.public-collective",
         "sections.meta-data-content",
-        "sections.general-data-table"
+        "sections.general-data-table",
+        "sections.roadmap",
+        "sections.topics"
       ],
       "pluginOptions": {
         "i18n": {

@@ -118,6 +118,12 @@
         "Partner",
         "Other"
       ]
+    },
+    "current": {
+      "type": "boolean"
+    },
+    "previouslyConfirmed": {
+      "type": "boolean"
     }
   }
 }

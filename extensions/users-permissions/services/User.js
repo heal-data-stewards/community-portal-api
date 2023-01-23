@@ -18,7 +18,8 @@ module.exports = {
         "users-permissions"
       ].services.user.hashPassword(values);
     }
-    if (values.confirmed) {
+    console.log(values)
+    if (values.confirmed && values.previouslyConfirmed !== true) {
       async function postData() {
         const response = await fetch(
           "https://api.healdatafair.org/account-accepted",
@@ -107,7 +108,8 @@ module.exports = {
     }
     postData().then((data) => {
       console.log(data); // JSON data parsed by `data.json()` call
-    });
+      console.log("edit test") 
+ });
   },
 };
 
