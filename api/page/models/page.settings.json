@@ -72,7 +72,10 @@
         "sections.meta-data-content",
         "sections.general-data-table",
         "sections.roadmap",
-        "sections.topics"
+        "sections.topics",
+        "sections.collective-events",
+        "sections.rich-text-modal",
+        "sections.sensitive-data"
       ],
       "pluginOptions": {
         "i18n": {

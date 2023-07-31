@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_rich_text_modals",
+  "info": {
+    "name": "RichTextModal",
+    "icon": "desktop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}
