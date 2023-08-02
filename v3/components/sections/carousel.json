@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_carousels",
+  "info": {
+    "name": "carousel",
+    "icon": "copyright",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "slide": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.slideitem"
+    }
+  }
+}

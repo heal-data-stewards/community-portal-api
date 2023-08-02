@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_tables",
+  "info": {
+    "icon": "border-all",
+    "displayName": "table"
+  },
+  "options": {},
+  "attributes": {
+    "table": {
+      "type": "json"
+    }
+  }
+}

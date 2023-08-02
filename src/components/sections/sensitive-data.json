@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_sensitive_data",
+  "info": {
+    "icon": "arrows-alt",
+    "displayName": "sensitive data"
+  },
+  "options": {},
+  "attributes": {
+    "sensitiveDataItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.sensitive-data-item"
+    }
+  }
+}

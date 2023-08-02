@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_videos",
+  "info": {
+    "icon": "barcode",
+    "displayName": "video"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    }
+  }
+}

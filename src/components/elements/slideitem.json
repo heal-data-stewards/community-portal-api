@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_elements_slideitems",
+  "info": {
+    "icon": "arrow-circle-right",
+    "displayName": "slideitem"
+  },
+  "options": {},
+  "attributes": {
+    "smallheader": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "richtext"
+    },
+    "url": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_directories",
+  "info": {
+    "icon": "align-justify",
+    "description": "",
+    "displayName": "Directory"
+  },
+  "options": {},
+  "attributes": {
+    "DirectoryComponent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.directory-component"
+    }
+  }
+}

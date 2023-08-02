@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_healplatforms",
+  "info": {
+    "name": "healplatform",
+    "icon": "assistive-listening-systems"
+  },
+  "options": {},
+  "attributes": {
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.question"
+    }
+  }
+}

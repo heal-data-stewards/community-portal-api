@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_table_rows",
+  "info": {
+    "icon": "border-none",
+    "displayName": "row"
+  },
+  "options": {},
+  "attributes": {
+    "columns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "table.column"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_heal_slides",
+  "info": {
+    "icon": "baseball-ball",
+    "displayName": "heal_slides"
+  },
+  "options": {},
+  "attributes": {
+    "small_header": {
+      "type": "string"
+    },
+    "large_header": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

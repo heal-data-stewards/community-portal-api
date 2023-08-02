@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_lists",
+  "info": {
+    "icon": "arrow-down",
+    "displayName": "list"
+  },
+  "options": {},
+  "attributes": {
+    "listItem": {
+      "type": "richtext"
+    }
+  }
+}

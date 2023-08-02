@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_heal_specific_resourses",
+  "info": {
+    "icon": "ankh",
+    "displayName": "healSpecificResourses"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "richtext"
+    }
+  }
+}

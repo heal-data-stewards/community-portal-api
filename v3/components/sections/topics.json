@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_topics",
+  "info": {
+    "name": "topics",
+    "icon": "file-invoice"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.topic"
+    }
+  }
+}

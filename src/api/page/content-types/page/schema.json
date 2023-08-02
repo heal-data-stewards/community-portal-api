@@ -1,0 +1,112 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "name": "page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "shortName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.metadata",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contentSections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.hero",
+        "sections.bottom-actions",
+        "sections.feature-columns-group",
+        "sections.feature-rows-group",
+        "sections.testimonials-group",
+        "sections.large-video",
+        "sections.rich-text",
+        "sections.pricing",
+        "sections.lead-form",
+        "sections.directory",
+        "sections.sign-in",
+        "sections.signup",
+        "sections.resources",
+        "sections.table",
+        "sections.carousel",
+        "sections.glossary",
+        "sections.calendarbody",
+        "sections.resourceblocksection",
+        "sections.pageheading",
+        "sections.fairiswheel",
+        "sections.faqs",
+        "sections.healplatform",
+        "sections.consortium",
+        "sections.members",
+        "sections.webinarbody",
+        "sections.webinar-item",
+        "sections.glossary-term-and-definition",
+        "sections.password-reset",
+        "sections.heal-slideshow",
+        "sections.resource-cards",
+        "sections.public-collective",
+        "sections.meta-data-content",
+        "sections.general-data-table",
+        "sections.roadmap",
+        "sections.topics",
+        "sections.collective-events",
+        "sections.rich-text-modal",
+        "sections.sensitive-data"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "published",
+        "draft"
+      ],
+      "default": "draft",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "regex": "^$|^[a-zA-Z/-]+$"
+    }
+  }
+}

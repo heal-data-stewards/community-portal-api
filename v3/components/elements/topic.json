@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_topics",
+  "info": {
+    "name": "topic",
+    "icon": "list-ul"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

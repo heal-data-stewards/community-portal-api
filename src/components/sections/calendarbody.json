@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_calendarbodies",
+  "info": {
+    "icon": "list-alt",
+    "displayName": "calendarbody"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "text"
+    }
+  }
+}

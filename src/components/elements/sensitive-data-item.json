@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_sensitive_data_items",
+  "info": {
+    "icon": "arrow-alt-circle-up",
+    "displayName": "sensitive-data-item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "sensitiveDataResources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.sensitive-data-resources"
+    },
+    "healSpecificResourses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.heal-specific-resourses"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_meta_data_contents",
+  "info": {
+    "icon": "arrow-up",
+    "description": "",
+    "displayName": "metaDataContent"
+  },
+  "options": {},
+  "attributes": {
+    "arrowImage": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-data-page.content"
+    }
+  }
+}

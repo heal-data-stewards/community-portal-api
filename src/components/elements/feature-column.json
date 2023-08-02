@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_slices_feature_columns",
+  "info": {
+    "icon": "align-center",
+    "description": "",
+    "displayName": "FeatureColumn"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "color": {
+      "type": "string"
+    }
+  }
+}

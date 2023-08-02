@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elements_steps",
+  "info": {
+    "icon": "bookmark",
+    "description": "",
+    "displayName": "steps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

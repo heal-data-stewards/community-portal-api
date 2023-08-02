@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_tags",
+  "info": {
+    "icon": "list",
+    "displayName": "tags"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    }
+  }
+}

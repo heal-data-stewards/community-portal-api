@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_webinars",
+  "info": {
+    "icon": "globe",
+    "displayName": "webinar"
+  },
+  "options": {},
+  "attributes": {
+    "webinaritem": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.webinar-item"
+    }
+  }
+}

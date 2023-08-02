@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_resource_cards",
+  "info": {
+    "icon": "ad",
+    "displayName": "resource_cards"
+  },
+  "options": {},
+  "attributes": {
+    "resource_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.resource-card"
+    }
+  }
+}

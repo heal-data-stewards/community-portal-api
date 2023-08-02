@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_presenters",
+  "info": {
+    "icon": "address-card",
+    "displayName": "presenter"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "picture": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    }
+  }
+}

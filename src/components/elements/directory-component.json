@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_elements_directory_components",
+  "info": {
+    "icon": "angle-right",
+    "description": "",
+    "displayName": "DirectoryComponent"
+  },
+  "options": {},
+  "attributes": {
+    "richtest": {
+      "type": "richtext"
+    }
+  }
+}

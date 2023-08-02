@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_table_columns",
+  "info": {
+    "icon": "caret-down",
+    "displayName": "column"
+  },
+  "options": {},
+  "attributes": {
+    "column_data": {
+      "type": "richtext"
+    }
+  }
+}

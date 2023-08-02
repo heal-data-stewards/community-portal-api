@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_elements_webinar_items",
+  "info": {
+    "icon": "comment-alt",
+    "description": "",
+    "displayName": "webinar-item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "datetime"
+    },
+    "abstract": {
+      "type": "richtext"
+    },
+    "presenter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.presenter"
+    },
+    "RegistrationLink": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.tags"
+    },
+    "webinresources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.webinarresourcetype"
+    }
+  }
+}

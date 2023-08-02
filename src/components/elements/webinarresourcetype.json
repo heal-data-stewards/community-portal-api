@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_webinarresourcetypes",
+  "info": {
+    "icon": "arrow-alt-circle-down",
+    "displayName": "webinarresourcetype"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "resourceinformation": {
+      "type": "richtext"
+    }
+  }
+}

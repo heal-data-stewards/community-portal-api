@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_gtd_sources",
+  "info": {
+    "icon": "file-pdf",
+    "displayName": "gtd_sources"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

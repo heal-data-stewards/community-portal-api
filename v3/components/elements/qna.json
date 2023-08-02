@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_qnas",
+  "info": {
+    "name": "qna",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    }
+  }
+}

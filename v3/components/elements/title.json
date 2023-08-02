@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_elements_titles",
+  "info": {
+    "name": "title",
+    "icon": "balance-scale-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "anchor": {
+      "type": "string"
+    }
+  }
+}

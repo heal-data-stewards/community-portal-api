@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_public_collectives",
+  "info": {
+    "icon": "basketball-ball",
+    "displayName": "public-collective"
+  },
+  "options": {},
+  "attributes": {
+    "meta": {
+      "type": "string"
+    }
+  }
+}

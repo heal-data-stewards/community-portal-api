@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_slices_feature_rows",
+  "info": {
+    "icon": "arrows-alt-h",
+    "description": "",
+    "displayName": "FeatureRow"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "media": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.link"
+    }
+  }
+}

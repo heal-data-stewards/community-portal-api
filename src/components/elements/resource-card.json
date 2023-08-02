@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_resource_cards",
+  "info": {
+    "icon": "box",
+    "displayName": "resource_card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "blurb": {
+      "type": "richtext"
+    }
+  }
+}

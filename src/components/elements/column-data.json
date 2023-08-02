@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_column_data",
+  "info": {
+    "icon": "bed",
+    "displayName": "column_data"
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "richtext"
+    }
+  }
+}

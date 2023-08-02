@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_meta_data_page_links",
+  "info": {
+    "icon": "audio-description",
+    "displayName": "links"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "richtext"
+    }
+  }
+}

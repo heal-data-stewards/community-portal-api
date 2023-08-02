@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_meta_data_blocks",
+  "info": {
+    "icon": "chess-board",
+    "displayName": "metaDataBlock"
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.info"
+    }
+  }
+}

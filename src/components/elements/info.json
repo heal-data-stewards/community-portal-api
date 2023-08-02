@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_elements_infos",
+  "info": {
+    "icon": "arrow-circle-down",
+    "displayName": "info"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.list"
+    }
+  }
+}

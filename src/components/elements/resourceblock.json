@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_resourceblocks",
+  "info": {
+    "icon": "dice-d6",
+    "description": "",
+    "displayName": "resourceblock"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

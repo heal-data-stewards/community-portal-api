@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_faqs",
+  "info": {
+    "icon": "asterisk",
+    "description": "",
+    "displayName": "Faqs"
+  },
+  "options": {},
+  "attributes": {
+    "qna": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.question"
+    }
+  }
+}

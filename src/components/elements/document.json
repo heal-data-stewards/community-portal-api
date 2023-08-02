@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_elements_documents",
+  "info": {
+    "icon": "book",
+    "description": "",
+    "displayName": "document"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

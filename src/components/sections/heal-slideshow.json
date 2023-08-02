@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_heal_slideshows",
+  "info": {
+    "icon": "band-aid",
+    "displayName": "heal_slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "heal_slides": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.heal-slides"
+    }
+  }
+}

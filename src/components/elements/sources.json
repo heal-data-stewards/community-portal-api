@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_sources",
+  "info": {
+    "icon": "balance-scale-left",
+    "displayName": "sources"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

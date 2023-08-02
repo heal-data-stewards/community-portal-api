@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_directories",
+  "info": {
+    "icon": "align-left",
+    "description": "",
+    "displayName": "Directory"
+  },
+  "options": {},
+  "attributes": {
+    "testtext": {
+      "type": "string"
+    },
+    "richtext": {
+      "type": "richtext"
+    }
+  }
+}

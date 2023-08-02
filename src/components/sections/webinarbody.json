@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_webinarbodies",
+  "info": {
+    "icon": "angry",
+    "displayName": "webinarbody"
+  },
+  "options": {},
+  "attributes": {
+    "meta": {
+      "type": "string"
+    }
+  }
+}

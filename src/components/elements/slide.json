@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_slides",
+  "info": {
+    "icon": "arrow-right",
+    "displayName": "slide"
+  },
+  "options": {},
+  "attributes": {
+    "slideitem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.slideitem"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_resources",
+  "info": {
+    "icon": "angle-double-down",
+    "displayName": "resources"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

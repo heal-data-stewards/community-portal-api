@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_collective_events",
+  "info": {
+    "name": "collectiveEvents",
+    "icon": "arrows-alt-v"
+  },
+  "options": {},
+  "attributes": {
+    "meta": {
+      "type": "string"
+    }
+  }
+}

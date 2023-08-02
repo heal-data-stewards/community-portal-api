@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_general_data_tables",
+  "info": {
+    "icon": "th-list",
+    "description": "",
+    "displayName": "general-data-table"
+  },
+  "options": {},
+  "attributes": {
+    "row": {
+      "type": "component",
+      "repeatable": true,
+      "component": "table.row"
+    }
+  }
+}

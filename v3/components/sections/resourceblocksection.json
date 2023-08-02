@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_resourceblocksections",
+  "info": {
+    "name": "resourceblocksection",
+    "icon": "layer-group",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "resourceblocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.resourceblock"
+    }
+  }
+}

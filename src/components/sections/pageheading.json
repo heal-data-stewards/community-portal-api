@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_pageheadings",
+  "info": {
+    "icon": "window-maximize",
+    "description": "",
+    "displayName": "Page Heading"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "optionaldescription": {
+      "type": "text"
+    }
+  }
+}

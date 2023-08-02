@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_webinarresources",
+  "info": {
+    "icon": "archway",
+    "displayName": "webinarresource"
+  },
+  "options": {},
+  "attributes": {
+    "webinarresourcetype": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.webinarresourcetype"
+    }
+  }
+}

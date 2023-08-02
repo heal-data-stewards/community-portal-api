@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_data",
+  "info": {
+    "name": "data",
+    "icon": "stream"
+  },
+  "options": {},
+  "attributes": {
+    "row": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.column-data"
+    }
+  }
+}

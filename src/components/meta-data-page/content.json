@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_meta_data_page_contents",
+  "info": {
+    "icon": "bell",
+    "description": "",
+    "displayName": "content"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-data-page.links"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "resource_title": {
+      "type": "string"
+    }
+  }
+}

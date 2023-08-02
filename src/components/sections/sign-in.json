@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_sign_ins",
+  "info": {
+    "icon": "allergies",
+    "displayName": "sign-in"
+  },
+  "options": {},
+  "attributes": {
+    "signinsection": {
+      "type": "string"
+    }
+  }
+}

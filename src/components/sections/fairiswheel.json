@@ -1,0 +1,94 @@
+{
+  "collectionName": "components_sections_fairiswheels",
+  "info": {
+    "icon": "arrow-alt-circle-right",
+    "description": "",
+    "displayName": "fairiswheel"
+  },
+  "options": {},
+  "attributes": {
+    "test": {
+      "type": "string"
+    },
+    "faqs_heal_platform": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.question"
+    },
+    "faqs_data_creation_and_depositions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.question"
+    },
+    "faqs_data_repos_and_archives": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.question"
+    },
+    "faqs_managing_active_data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.question"
+    },
+    "documents_heal_platform": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.document"
+    },
+    "documents_data_repos_and_archives": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.document"
+    },
+    "documents_data_creation_and_depositions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.document"
+    },
+    "documents_managing_active_data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.document"
+    },
+    "qanda_managing_active_data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.qanda"
+    },
+    "qanda_data_repositories_and_archives": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.qanda"
+    },
+    "qanda_heal_platform": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.qanda"
+    },
+    "qanda_data_creation_and_deposition": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.qanda"
+    },
+    "video_heal_platform": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.video"
+    },
+    "video_data_creation_and_depositions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.video"
+    },
+    "video_data_repos_and_archives": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.video"
+    },
+    "video_managing_active_data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.video"
+    }
+  }
+}
