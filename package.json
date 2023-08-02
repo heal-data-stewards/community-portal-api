@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "npm run develop",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "test": "strapi generate:plugin"
   },
   "devDependencies": {},
   "dependencies": {
