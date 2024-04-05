@@ -100,18 +100,6 @@ DATABASE_SSL=false
 5. Visit on localhost:1337
 6. Pull in the db From the production site info coming soon
 
-## Restoring the database
-1. In AWS RDS go to snapshots
-2. Choose the date you want a snapshot of
-3. Create the snapshot
-4. In the setting for class choose db.t3.small
-5. Wait until the new DB instance is created
-6. Take note of the new endpoint which can be found in Connectivity & Security in RDS
-7. SSH into the server
-8. Open up ecosystem.config.js and change the value for DATABASE_HOST to the new endpoint.
-9. Save
-10. RUN pm2 restart ecosystem.config.js
-
 ### `Development/Workflow`
 ### As of Nov 2023 All work is being done on the master branch until further notice. Anywhere that is says staging is to be replaced with master. 
 
@@ -124,3 +112,22 @@ DATABASE_SSL=false
 3. Create a new branch for development (should be linked to a github issue)
 4. Once task is completed and tested push up the branch and create a PR to staging and tag team mates for review.
 5. For deployment see "RENCI Deployment" section.
+
+# Amazon Web Services Specific
+
+## Restoring the database
+To restore a DB instance from a DB snapshot https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_RestoreFromSnapshot.html
+
+1. Sign in to the AWS Management Console and open the Amazon RDS console at https://console.aws.amazon.com/rds/.
+2. In the navigation pane, choose Snapshots.
+3. Choose the DB snapshot that you want to restore from.
+4. For Actions, choose Restore snapshot.
+5. On the Restore snapshot page, for DB instance identifier, enter the name for your restored DB instance.
+6. Specify other settings, such as allocated storage size.
+7. For information about each setting, see Settings for DB instances.
+8. Choose Restore DB instance.
+6. Take note of the new endpoint which can be found in Connectivity & Security in RDS
+7. SSH into the server
+8. Open up ecosystem.config.js and change the value for DATABASE_HOST to the new endpoint.
+9. Save
+10. RUN pm2 restart ecosystem.config.js
