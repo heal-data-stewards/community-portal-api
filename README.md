@@ -64,7 +64,7 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 
 ### `Installation`
 
-## Setting up A Postgres Database (Quick and easy set up using Postgres App) https://postgresapp.com/downloads.html
+## Setting up A Postgres Database on Mac (Quick and easy set up using Postgres App) https://postgresapp.com/downloads.html
 
 
 1. Download package 
